@@ -1,14 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project>
+<project version="2">
   <!-- Output SWF options -->
   <output>
-    <movie disabled="True" />
+    <movie outputType="OtherIDE" />
     <movie input="" />
     <movie path="" />
     <movie fps="30" />
     <movie width="800" />
     <movie height="600" />
-    <movie version="11" />
+    <movie version="10" />
+    <movie minorVersion="1" />
+    <movie platform="Flash Player" />
     <movie background="#FFFFFF" />
   </output>
   <!-- Other classes to be compiled into your SWF -->
@@ -25,6 +27,7 @@
     <option locale="" />
     <option loadConfig="" />
     <option optimize="True" />
+    <option omitTraces="True" />
     <option showActionScriptWarnings="True" />
     <option showBindingWarnings="True" />
     <option showInvalidCSS="True" />
@@ -40,7 +43,7 @@
     <option staticLinkRSL="True" />
     <option additional="" />
     <option compilerConstants="" />
-    <option customSDK="" />
+    <option minorVersion="" />
   </build>
   <!-- SWC Include Libraries -->
   <includeLibraries>
@@ -57,6 +60,7 @@
     <element path="..\libs\Papervision3D_2.0.883.swc" />
     <element path="..\libs\Pyronova 2.0.39 Alpha.swc" />
     <element path="..\libs\ZedBox-FP9 1.1.swc" />
+    <element path="..\libs\starling-v1.1.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>
@@ -69,6 +73,7 @@
     <element path="..\libs\Papervision3D_2.0.883.swc" />
     <element path="..\libs\Pyronova 2.0.39 Alpha.swc" />
     <element path="..\libs\ZedBox-FP9 1.1.swc" />
+    <element path="..\libs\starling-v1.1.swc" />
   </externalLibraryPaths>
   <!-- Runtime Shared Libraries -->
   <rslPaths>
@@ -99,4 +104,6 @@
     <option showHiddenPaths="True" />
     <option testMovie="Default" />
   </options>
+  <!-- Plugin storage -->
+  <storage />
 </project>
