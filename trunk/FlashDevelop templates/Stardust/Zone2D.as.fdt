@@ -1,0 +1,64 @@
+﻿package $(Package) $(CSLB) {
+	import idv.cjcat.stardust.common.xml.XMLBuilder;
+	import idv.cjcat.stardust.twoD.geom.MotionData2D;
+	import idv.cjcat.stardust.twoD.geom.MotionData2DPool;
+	import idv.cjcat.stardust.twoD.geom.Vec2D;
+	import idv.cjcat.stardust.twoD.geom.Vec2DPool;
+	import idv.cjcat.stardust.twoD.zones.Zone;
+	
+	public class $(FileName) extends Zone {
+		
+		public function $(FileName)() {
+			
+		}
+		
+		override public function contains(x:Number, y:Number):Boolean {
+			
+			return false;
+		}
+		
+		override public function calculateMotionData2D():MotionData2D {
+			var x:Number;
+			var y:Number;
+			
+			$(EntryPoint)
+			
+			return MotionData2DPool.get(x, y);
+		}
+		
+		override protected function updateArea():void {
+			area = 0;
+		}
+		
+		
+		//XML
+		//------------------------------------------------------------------------------------------------
+		
+		override public function getRelatedObjects():Array {
+			return [];
+		}
+		
+		override public function getXMLTagName():String {
+			return "$(FileName)";
+		}
+		
+		override public function toXML():XML {
+			var xml:XML = super.toXML();
+			
+			//add custom attributes or children nodes to the XML representation
+			
+			
+			return xml;
+		}
+		
+		override public function parseXML(xml:XML, builder:XMLBuilder = null):void {
+			super.parseXML(xml, builder);
+			
+			//parse custom attributes or children nodes from the XML representation
+			
+		}
+		
+		//------------------------------------------------------------------------------------------------
+		//end of XML
+	}
+}

@@ -1,0 +1,57 @@
+﻿package $(Package) $(CSLB) {
+	import idv.cjcat.stardust.common.clocks.Clock;
+	import idv.cjcat.stardust.common.xml.XMLBuilder;
+	import idv.cjcat.stardust.threeD.emitters.Emitter3D;
+	
+	public class $(FileName) extends Emitter3D {
+		
+		public function $(FileName)(clock:Clock) {
+			super(clock);
+			
+			/**
+			 * Initializers
+			 * 
+			 * <ex> addInitializer(new Mass(new UniformRandom(1, 0.5)));
+			 */
+			$(EntryPoint)
+			
+			/**
+			 * Actions
+			 * 
+			 * <ex> addAction(new Move3D());
+			 */
+			
+		}
+		
+		
+		//XML
+		//------------------------------------------------------------------------------------------------
+		
+		override public function getRelatedObjects():Array {
+			return [];
+		}
+		
+		override public function getXMLTagName():String {
+			return "$(FileName)";
+		}
+		
+		override public function toXML():XML {
+			var xml:XML = super.toXML();
+			
+			//add custom attributes or children nodes to the XML representation
+			
+			
+			return xml;
+		}
+		
+		override public function parseXML(xml:XML, builder:XMLBuilder = null):void {
+			super.parseXML(xml, builder);
+			
+			//parse custom attributes or children nodes from the XML representation
+			
+		}
+		
+		//------------------------------------------------------------------------------------------------
+		//end of XML
+	}
+}

@@ -1,0 +1,1 @@
+The stars are spawned as Papervision3D Particle objects with MovieParticleMaterial.

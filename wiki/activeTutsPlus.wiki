@@ -1,0 +1,42 @@
+#labels Featured
+=Shoot Out Stars with the Stardust Particle Engine =
+
+[http://active.tutsplus.com/tutorials/effects/shoot-out-stars-with-the-stardust-particle-engine/ http://activetuts.s3.cdn.plus.org/tuts/053_starDust/preview.jpg]
+
+  * Basic usage.
+  * 2D particle effects.
+
+[http://active.tutsplus.com/tutorials/effects/shoot-out-stars-with-the-stardust-particle-engine/ View Tutorial]
+
+----
+
+=Create 3D Effects With the Stardust Particle Engine =
+
+[http://active.tutsplus.com/tutorials/effects/create-3d-effects-with-the-stardust-particle-engine/ http://activetuts.s3.amazonaws.com/tuts/075_stardust3D/Preview/Preview.jpg]
+
+  * 3D particle effects.
+  * Stardust's native 3D engine.
+  * Integration with Papervision3D.
+
+[http://active.tutsplus.com/tutorials/effects/create-3d-effects-with-the-stardust-particle-engine/ View Tutorial]
+
+----
+
+=Manipulating Particle Motion with Stardust Particle Engine - Part 1=
+
+[http://active.tutsplus.com/tutorials/effects/manipulating-particle-motion-with-stardust-particle-engine-part-1/ http://activetuts.s3.amazonaws.com/tuts/148_particleMotion/Preview/Preview.jpg]
+
+  * Vector field basics.
+  * Gravity fields.
+
+[http://active.tutsplus.com/tutorials/effects/manipulating-particle-motion-with-stardust-particle-engine-part-1/ View Tutorial]
+
+----
+
+=Manipulating Particle Motion with Stardust Particle Engine - Part 2=
+
+[http://active.tutsplus.com/tutorials/effects/manipulating-particle-motion-with-stardust-particle-engine-%E2%80%93-part-2/ http://activetuts.s3.amazonaws.com/tuts/154_starDustParticleEngine/Preview/Preview.jpg]
+
+  * Deflectors
+
+[http://active.tutsplus.com/tutorials/effects/manipulating-particle-motion-with-stardust-particle-engine-%E2%80%93-part-2/ View Tutorial]

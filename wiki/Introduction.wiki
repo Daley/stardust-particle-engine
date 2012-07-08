@@ -1,0 +1,91 @@
+=Introduction=
+
+==Stardust Features Overview==
+
+This section covers the features of Stardust.
+
+===2D And 3D Particle Effects===
+
+Stardust allows developers to create 2D and 3D particle effects, easily combined with the 2D and 3D render engines of their choice. By extending the `ParticleHandler` class, developers may listen the creation, removal, data update of the particles, and link the particle data with render engines.
+
+
+===High Extensibility===
+
+Stardust encapsulates each modular component of the particle engine into separate abstract classes, exposing a set of methods that can be easily overridden by developers to create custom particle effects. This flexibility allows developers to create custom emission reates, initializations, particle behaviors, etc.
+
+
+===Support for Popular 3D Engines===
+
+For developers convenience, Stardust already provides official extensions for several popular 3D engines, including ZedBox, Papervision3D, Alternativa3D, Flare3D, and ND3D. We are looking forward to creating extensions for more 3D engines.
+
+
+===XML Serialization===
+
+Stardust can serialize a particle system into XML representation, which can be stored as a separate file from the main program. The separate XML file can be loaded into the program at run-time and be deserialized to reconstruct the original particle system. This feature allows developers to easily tweak parameters in the XML file without having to recompile the main program.
+
+
+----
+
+==Class Responsibilities==
+
+This section covers the responsibility of each core classes.
+
+===The `StardustElement` Class===
+
+This class defines the basic properties and methods of an element in a particle system, such as element name and XML conversion. This class is extended by most of the abstract classes in Stardust, such as the `Emitter`, `Initializer`, and `Action` classes.
+
+
+===The `Emitter` Class===
+
+This class is in charge of creating new particles, updating particles in the main loop, and removing dead particles from simulation. You have to repeatedly call its `step` method to keep the simulation going. The `step` method is the main loop function of a Stardust particle system.
+
+
+===The `Initializer` Class===
+
+This class initializes a particle’s properties just once upon the particle’s birth. An initializer can be added to an emitter through the emitter’s `addInitializer` method.
+
+Initializers can initialize a particle’s position, velocity, rotation, angular velocity, mass, mask, alpha, scale, and so on.
+
+
+===The `Action` Class===
+
+This class manipulates a particle’s properties on each call of an emitter’s `step` method.
+Actions can update a particle’s position according to the particle’s velocity, change a particle’s velocity according to gravity fields or deflectors, and so on.
+
+
+===The `Clock Class===
+
+This class decides how frequently an emitter creates new particles. Upon an emitter’s `step` method call, the emitter calls its associated clock’s `getTicks` method to determine how many new particles to create.
+
+
+===The `Renderer` Class===
+
+The emitter class updates particle data. The data is only numerical data in a computer’s memory. This class is used to visualize the numerical data onto the screen.
+
+You can extend this class to create your own renderer that works with specific 3D engines. Engine-specific codes are only written in this class and initializers.
+
+
+===The `Random` Class===
+
+This class is in charge of generating random values that can used to create the randomness of particles. Remember my own definition for particle effects? I said particles are entities with similar but not exactly same appearance and behaviors. In other words, particles possess a quality of randomness.
+
+Many initializers make use of this class to create particles with random properties, such as the Rotation, Scale, and Alpha classes.
+
+
+===The `Field` Class===
+
+This class represents vector fields. Vector fields can be used as gravity fields, impulse fields, etc.
+
+For example, a `UniformField` object, which is, as its name suggests, a uniform vector field, can be used to create earth gravity if pointed downward, or create wind effect if the `massless` property is set to false.
+
+
+===The `Deflector` Class===
+
+This class takes a particle’s position and velocity as inputs and outputs a new position and velocity. Used with the `Deflect` action, you can manipulate a particle’s position and velocity based on its original position and velocity.
+
+
+===The `Zone` Class===
+
+This class represents a geometric zone. A zone generates a random point contained in the zone through the `getPoint` method. This point can be used to initialize a particle’s position or velocity.
+
+*The 3D version of the Deflector, Field, and Zone classes are the `Deflector3D`, `Field3D`, and `Zone3D` classes, respectively.*

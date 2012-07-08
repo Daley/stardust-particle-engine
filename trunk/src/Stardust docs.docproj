@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<docProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <pageTitle>Stardust Particle Engine v1.3</pageTitle>
+  <classPaths />
+  <sourcesList />
+  <outputDirectory>..\docs</outputDirectory>
+  <activeCompiler>1</activeCompiler>
+  <extraOptions>-doc-sources "..\src" -external-library-path "..\libs\Papervision3D_2.0.883.swc" -external-library-path "..\libs\ZedBox-FP9 1.1.swc" -external-library-path "..\libs\ND3D 0.2.swc" -external-library-path "..\libs\Flare3D.swc" -external-library-path "..\libs\CJSignals 1.0.25.swc" -external-library-path "..\libs\Alternativa3D 7.6.0.swc" -external-library-path "..\libs\Away3D 3.6.0.swc" -external-library-path "..\libs\Away3DLite 1.0.0.swc" -external-library-path "..\libs\Pyronova 2.0.39 Alpha.swc"</extraOptions>
+</docProject>

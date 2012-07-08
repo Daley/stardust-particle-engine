@@ -1,0 +1,1 @@
+This example uses a PointUniburster object to burst five particles at a time, spreading out at uniformly distributed angles.

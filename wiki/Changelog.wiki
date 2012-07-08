@@ -1,0 +1,290 @@
+#labels Featured
+=Version 1.3.195 - Jan 15, 2011=
+
+===Fixed:===
+  * [http://code.google.com/p/stardust-particle-engine/issues/detail?id=6&can=1 Issue 7 - PooledDisplayObjectClass initializer not working]
+  * [http://code.google.com/p/stardust-particle-engine/issues/detail?id=8&can=1 Issue 8 - Changing the displayObjectClass for PooledDisplayObjectClass]
+  * [http://code.google.com/p/stardust-particle-engine/issues/detail?id=9&can=1 Issue 9 - LazySectorZone now properly serializing to XML]
+  * [http://code.google.com/p/stardust-particle-engine/issues/detail?id=10&can=1 Issue 10 - Field not properly serializing in]
+
+----
+
+==Version 1.3.193 - Jan 13, 2011==
+
+===Added:===
+  * Support for [http://code.google.com/p/pyronova/ Pyronova Bitmap Rendering Engine].
+
+----
+
+==Version 1.3.186 - Jan 8, 2011==
+
+===Added:===
+  * Support for Away3D and Away3DLite.
+
+===Modified===
+  * Migrated from renderers to particle handlers. See [http://code.google.com/p/stardust-particle-engine/wiki/MigrationForStardust1_3 Migration for Stardust 1.3].
+  * ParticleIterator.particle getter changed to ParticleIterator.particle() for better performance.
+
+----
+
+==Version 1.2.169 - Jan 2, 2011==
+
+===Added:===
+  * Support for Alternativa3D.
+
+----
+
+==Version 1.2.163 - Aug 3, 2010==
+
+===Modified:===
+  * Stardust now uses [http://code.google.com/p/cjsignals/ CJSignals] observer framework instead of the native event system.
+
+----
+
+==Version 1.1.161 - Jun 7, 2010==
+
+===Added:===
+  * Emitter.preStep() and Emitter.postStep() methods.
+  * Emitter.particleCollection property for switching between preferred collection types.
+
+===Fixed:===
+  * ParticleFastArray.size getter returns NaN.
+
+===Modified:===
+  * Many methods are now marked final to improve performance.
+
+----
+
+==Version 1.1.151 - May 25, 2010==
+
+===Added:===
+  * Flare3D engine support.
+  * Flare3D initializers - Flare3DPivot3DClass, Flare3DPivot3DClone, and Flare3DSprite3D.
+  * Flare3D renderers - Flare3DPivot3DRenderer and Flare3DSprite3DRenderer.
+
+----
+
+==Version 1.1.148 - May 21, 2010==
+
+* Version 1.1 initial release (fast-array implementation).
+
+===Added:===
+  * ParticleFastArray and ParticleFastArrayIterator classes.
+
+===Improved:===
+  * Smaller compiled file size (usually around 25kb).
+
+===Modified:===
+  * The default internal array collections for emitters are now fast arrays.
+
+----
+
+==Version 1.1.138 Beta - Feb 27, 2010==
+
+===Fixed:===
+  * Circular linked lists caused by using multiple emitters.
+  * Orphan display objects caused by using multiple emitters.
+
+===Modified:===
+  * Emitter.getParticles() method changed to Emitter.particles getter method.
+
+----
+
+==Version 1.1.132 Beta - Dec 27, 2009==
+
+  * Version 1.1 Beta initial release (linked-list implementation).
+
+===Added:===
+  * Particle collection interfaces: ParticleCollection, ParticleIterator.
+  * Particle collection classes: ParticleList, ParticleListIterator.
+
+===Modified:===
+  * All Stardust classes now conform to the particle collection interfaces.
+
+----
+
+==Version 1.0.130 Beta - Dec 24, 2009==
+
+===Modified:===
+  * Renderer.particlesCreated() method renamed to Renderer.particlesAdded() to be consistent with the EmitterEvent.PARTICLES_ADDED event type name.
+
+----
+
+
+==Version 1.0.127 Beta - Dec 12, 2009==
+
+===Fixed:===
+  * XMLBuilder.traverseRelatedObjects() method crashes when a null element is encountered.
+
+===Added:===
+  * DeflectorTrigger & DeflectorTrigger3D.
+
+===Modified:===
+  * Deflect & Deflect3D now work with DeflectorTrigger & DeflectorTrigger3D.
+
+----
+
+==Version 1.0.124 Beta - Dec 10, 2009==
+
+===Added:===
+  * ZBBillboardOriented action for ZedBox extension.
+
+===Modified:===
+  * CalculateScreenVelocity action removed, replaced by internal operation in DisplayObjectRenderer3D.
+  * ZBDisplayObjectClass now uses object pool to boost ZedSprite instantiation performance.
+
+----
+
+==Version 1.0.119 Beta - Dec 3, 2009==
+
+===Fixed:===
+  * Oriented and Oriented3D actions time scale bug fixed. (This bug only affects you if your time scale is not set to one)
+
+===Added:===
+  * IStardustSprite interface.
+  * StardustMovieClip class;
+  * StardustSpriteInit and StardustSpriteInit3D initializers. 
+  * StardustSpriteUpdate and StardustSpriteUpdate3D actions.
+  * PooledDisplayObject and PooledDisplayObject3D initializers.
+
+----
+
+==Version 1.0.110 Beta - Nov 28, 2009==
+
+===Modified:===
+  * Default XML parsing behaviors added to all Stardust elements. Now you don't have to provide a complete XML data to the StardustElement.parseXML() method.
+
+----
+
+==Version 1.0.110 Beta - Oct 22, 2009==
+
+===Modified:===
+  * XMLBuilder now does not register any classes by default, lowering the compiled program's file size.
+
+----
+
+==Version 1.0.106 Beta - Sep 25, 2009==
+
+===Fixed:===
+  * Memory leakage due to Vec2D objects not properly recycled in the CircleDeflector, LineDeflector, SphereDeflector, and PlaneDeflector classes. ([http://code.google.com/p/stardust-particle-engine/issues/detail?id=2&can=1 issue2])
+
+----
+
+==Version 1.0.101 Beta - Sep 8, 2009==
+
+===Fixed:===
+  * BitmapZone.contains() was not overriden.
+
+===Modified:===
+  * Redundant class imports cleaned up.
+
+----
+
+==Version 1.0.96 Beta - Sep 7, 2009==
+
+===Added:===
+  * Emitter.getParticles.getParticles() method.
+  * PixelBurster class.
+  * Snapshot, Snapshot3D classes.
+  * SnapshotRestore, SnapshotRestore3D classes.
+  * SnapshotRestoreFlag, SnapshotRestore3DFlag classes.
+  * SnapshotRestoreEvent, SnapshotRestore3DEvent classes.
+
+===Modified:===
+  * StardustElement class now extends EventDispatcher class.
+
+----
+
+==Version 1.0.90 Beta - Sep 1, 2009==
+
+===Modified:===
+  * BitmapRenderer, PixelRenderer, and SingularBitmapRenderer now make use of the BitmapData.lock() and unlock() methods to improve bitmap drawing performance.
+
+----
+
+==Version 1.0.90 Beta - Aug 30, 2009==
+
+===Fixed:===
+  * ScaleCurve and AlphaCurve constructor parameters, inFunction and outFunction, do not work properly.
+  * LazySectorZone XML conversion is incorrect.
+  * Multiple XMLBuilder.buildFromXML() calls result in memory leak, due to use of Dictionary.
+
+----
+
+==Version 1.0.88 Beta - Aug 28, 2009==
+
+===Added:===
+  * ActionTrigger2D class, base class for 2D action triggers.
+  * ActionTrigger3D class, base class for 3D action triggers.
+
+===Modified:===
+  * ZoneTrigger now extends ActionTrigger2D.
+  * ZoneTrigger3D now extends ActionTrigger3D.
+
+----
+
+==Version 1.0.84 Beta - Aug 25, 2009==
+
+===Modified:===
+  * Added default parameters for all StardustElement subclass constructors (otherwise it induces errors when using the XMLBuilder().buildFromXML() method).
+
+----
+
+==Version 1.0.80 Beta - Aug 25, 2009==
+
+===Fixed:===
+  * Some vectors are recycled before a function ends.
+
+===Modified:===
+  * Deflect action priority decreased, higher than Move & Spin actions by one.
+
+----
+
+==Version 1.0.74 Beta - Aug 24, 2009==
+
+===Fixed:===
+  * Mass.getXMLTagName() method returns "Life" instead of "Mass".
+
+===Modified:===
+  * XMLBuilder.buildXML() XML tag sorting function changed to alphabetical.
+
+----
+
+==Version 1.0.70 Beta - Aug 23, 2009==
+
+===Added:===
+  * FollowWaypoints action.
+  * FollowWaypoints3D action.
+  * Waypoint and Waypoint3D classes.
+  * StardustElement.getElementTypeXMLTag() method.
+
+===Modified:===
+  * XMLBuilder.buildXML() method modified for flexibility for custom element types.
+
+----
+
+==Version 1.0.67 Beta - Aug 23, 2009==
+
+===Fixed:===
+  * PixelRenderer ends render loop upon encountering a particle not requiring rendering.
+
+----
+
+==Version 1.0.64 Beta - Aug 20, 2009==
+
+===Fixed:===
+  * MutualAction masking problem.
+
+----
+
+==Version 1.0.59 Beta - Aug 19, 2009==
+
+===Added:===
+  * Color initializer.
+  * PixelRenderer renderer.
+
+----
+
+==Version 1.0.44 Beta - Aug 13, 2009==
+
+  * Version 1.0 Beta initial release.

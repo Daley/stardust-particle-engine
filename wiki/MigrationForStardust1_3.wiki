@@ -1,0 +1,55 @@
+#labels Featured
+==Particle Handlers==
+
+The biggest change from Stardust version 1.2 to 1.3 is switching from renderers to particle handlers.
+
+Previously, renderers are used to read out particle data and visualize the particle effects through other 2D or 3D engines. A renderer listens for events dispatched by an emitter, and handles the adding, removal, data update of the particles.
+
+Now, each emitter has its own particle handler, which handles the adding of new particles, the removal of dead particles, and read out particle data when all actions are completed.
+
+The skeleton of a `ParticleHanlder` object looks like this:
+
+{{{
+class ParticleHandler extends StardustElement {
+	public function stepBegin(emitter:Emitter, particles:ParticleCollection, time:Number):void {}
+	public function stepEnd(emitter:Emitter, particles:ParticleCollection, time:Number):void {}
+	public function particleAdded(particle:Particle):void {}
+	public function particleRemoved(particle:Particle):void {}
+	public function readParticle(particle:Particle):void {}
+}
+}}}
+
+  * The `stepBegin` method is invoked at the beginning of each emitter step.
+  * The `stepEnd` method is invoked at the end of each emitter step.
+  * The `particlesAdded` method is invoked when a new particle is added to the emitter.
+  * The `particlesRemoved` method is invoked when a dead particle is removed from the emitter.
+  * The `readParticle` method is invoked when a particle is fully updated by all actions.
+
+A particle handler is assigned to an emitter through the Emitter.particleHandler property, which is quite straightforward:
+
+{{{
+emitter.particleHandler = new DisplayObjectHandler(container);
+}}}
+
+
+==Polling Stations==
+
+A straightforward application of the particle handler is a polling station.
+
+If you prefer "polling" the emitter for particle data after each iteration rather than handle the data directly within a particle handler, you may use the `PollingStation` class, which extends the `ParticleHandler` class.
+
+Assign a `PollingStation` object to an emitter as any ordinary particle handler, and keep a reference to the polling station. After each emitter step, you may access the polling station for data concerning the new particles added in the previous step, the dead particles removed in the previous step, and the particles that are still alive.
+
+The skeleton of the `PollingStation` class looks like this:
+
+{{{
+class PollingStation extends ParticleHandler {
+	public function get particlesAdded():ParticleCollection;
+	public function get particlesRemoved():ParticleCollection;
+	public function get particles():ParticleCollection;
+}
+}}}
+
+  * The `particlesAdded` property is a collection of new particles added in the previous emitter step.
+  * The `particlesRemoved` property is a collection of dead particles removed in the previous step.
+  * The `particles` property is a collection of particles that are still alive.

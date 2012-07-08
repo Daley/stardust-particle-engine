@@ -1,0 +1,6 @@
+syntax: glob
+trunk/bin/*.swc
+trunk/src/bin/*.swc
+trunk/src/obj/*
+*.flex.compc.xml
+*.lxml

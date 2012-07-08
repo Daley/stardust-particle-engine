@@ -1,0 +1,870 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print">
+<meta content="LazyInitializer,idv.cjcat.stardust.twoD.initializers.LazyInitializer,alpha,alphaVar,collisionRadius,direction,directionVar,displayObjectClass,displayObjectClassParams,life,lifeVar,mask,mass,massVar,omega,omegaVar,position,rotation,rotationVar,scale,scaleVar,speed,speedVar,addInitializer,clearInitializers,getRelatedObjects,getXMLTagName,parseXML,removeInitializer,superAddInitializer,toXML" name="keywords">
+<title>idv.cjcat.stardust.twoD.initializers.LazyInitializer</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'LazyInitializer - API Documentation';
+				var baseRef = '../../../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Stardust Particle Engine v1.3</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../../all-classes.html')" href="../../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../../all-classes.html')" href="../../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../../index-list.html')" href="../../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../../index.html?idv/cjcat/stardust/twoD/initializers/LazyInitializer.html&amp;idv/cjcat/stardust/twoD/initializers/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;LazyInitializer</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class LazyInitializer"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">idv.cjcat.stardust.twoD.initializers</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class LazyInitializer</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">LazyInitializer <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../../images/inherit-arrow.gif"> <a href="../../common/initializers/CompositeInitializer.html">CompositeInitializer</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../../images/inherit-arrow.gif"> <a href="../../common/initializers/Initializer.html">Initializer</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../../images/inherit-arrow.gif"> <a href="../../common/StardustElement.html">StardustElement</a></td>
+</tr>
+</table>
+<p></p>
+  This is a wrapper class of several common and useful initializers. 
+  As it's name suggests, you can use this class whenever you're too lazy to create initializers one by one.
+  You don't directly control these component initializers; 
+  instead, you use the abstract properties provided by this class.
+   
+  <p>
+  This composite initializer is consisted of the folling actions:
+  <ul>
+  <li>DisplayObjectClass</li>
+  <li>Position</li>
+  <li>Rotation</li>
+  <li>Velocity</li>
+  <li>Omega</li>
+  <li>Scale</li>
+  <li>Mass</li>
+  <li>Mask</li>
+  <li>CollisionRadius</li>
+  <li>Alpha</li>
+  </ul>
+  </p>
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<div class="showHideLinks">
+<div class="hideInheritedProperty" id="hideInheritedProperty">
+<a onclick="javascript:setInheritedVisible(false,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Properties</a>
+</div>
+<div class="showInheritedProperty" id="showInheritedProperty">
+<a onclick="javascript:setInheritedVisible(true,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Properties</a>
+</div>
+</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/initializers/Initializer.html#active">active</a> : Boolean<div class="summaryTableDescription">
+   Denotes if the initializer is active, true by default.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/initializers/Initializer.html">Initializer</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#alpha">alpha</a> : Number<div class="summaryTableDescription">
+   Average alpha.</div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#alphaVar">alphaVar</a> : Number<div class="summaryTableDescription">
+   Alpha variation.</div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#collisionRadius">collisionRadius</a> : Number<div class="summaryTableDescription">
+   Particle collision radius.</div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#direction">direction</a> : <a href="../geom/Vec2D.html">Vec2D</a>
+<div class="summaryTableDescription">[read-only]
+   Average direction.</div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#directionVar">directionVar</a> : Number<div class="summaryTableDescription">
+   Direction variation, in degrees.</div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#displayObjectClass">displayObjectClass</a> : Class<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#displayObjectClassParams">displayObjectClassParams</a> : Array<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#life">life</a> : Number<div class="summaryTableDescription">
+   Average life.</div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#lifeVar">lifeVar</a> : Number<div class="summaryTableDescription">
+   Life variation.</div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#mask">mask</a> : int<div class="summaryTableDescription">
+   Particle mask value.</div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#mass">mass</a> : Number<div class="summaryTableDescription">
+   Average mass.</div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#massVar">massVar</a> : Number<div class="summaryTableDescription">
+   Mass variation.</div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/StardustElement.html#name">name</a> : String<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/StardustElement.html">StardustElement</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/initializers/CompositeInitializer.html#needsRecycle">needsRecycle</a> : Boolean<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/initializers/CompositeInitializer.html">CompositeInitializer</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#omega">omega</a> : Number<div class="summaryTableDescription">
+   Average omega (angular velocity).</div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#omegaVar">omegaVar</a> : Number<div class="summaryTableDescription">
+   Omega variation.</div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/initializers/Initializer.html#onAdd">onAdd</a> : ISignal<div class="summaryTableDescription">
+   Dispatched when the added to an emitter.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/initializers/Initializer.html">Initializer</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/initializers/Initializer.html#onPriorityChange">onPriorityChange</a> : ISignal<div class="summaryTableDescription">
+   Dispatched when the action's priority is changed.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/initializers/Initializer.html">Initializer</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/initializers/Initializer.html#onRemove">onRemove</a> : ISignal<div class="summaryTableDescription">
+   Dispatched when the removed from an emitter.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/initializers/Initializer.html">Initializer</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#position">position</a> : <a href="../zones/Zone.html">Zone</a>
+<div class="summaryTableDescription">
+   Position zone.</div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/initializers/Initializer.html#priority">priority</a> : int<div class="summaryTableDescription">
+   Initializers will be sorted according to their priorities.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/initializers/Initializer.html">Initializer</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#rotation">rotation</a> : Number<div class="summaryTableDescription">
+   Average rotation.</div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#rotationVar">rotationVar</a> : Number<div class="summaryTableDescription">
+   Rotation variation.</div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#scale">scale</a> : Number<div class="summaryTableDescription">
+   Average scale.</div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#scaleVar">scaleVar</a> : Number<div class="summaryTableDescription">
+   Scale variation.</div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#speed">speed</a> : Number<div class="summaryTableDescription">
+   Average speed.</div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#speedVar">speedVar</a> : Number<div class="summaryTableDescription">
+   Speed variation.</div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/initializers/Initializer.html#supports2D">supports2D</a> : Boolean<div class="summaryTableDescription">
+   Whether this initializer supports 2D.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/initializers/Initializer.html">Initializer</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/initializers/Initializer.html#supports3D">supports3D</a> : Boolean<div class="summaryTableDescription">
+   Whether this initializer supports 3D.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/initializers/Initializer.html">Initializer</a></td>
+</tr>
+</table>
+</div>
+<a name="protectedPropertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Properties</div>
+<div class="showHideLinks">
+<div class="hideInheritedProtectedProperty" id="hideInheritedProtectedProperty">
+<a onclick="javascript:setInheritedVisible(false,'ProtectedProperty');" href="#protectedPropertySummary" class="showHideLink"><img src="../../../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Protected Properties</a>
+</div>
+<div class="showInheritedProtectedProperty" id="showInheritedProtectedProperty">
+<a onclick="javascript:setInheritedVisible(true,'ProtectedProperty');" href="#protectedPropertySummary" class="showHideLink"><img src="../../../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Protected Properties</a>
+</div>
+</div>
+<table id="summaryTableProtectedProperty" class="summaryTable hideInheritedProtectedProperty" cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedProtectedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/initializers/CompositeInitializer.html#initializers">initializers</a> : Array<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/initializers/CompositeInitializer.html">CompositeInitializer</a></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<div class="showHideLinks">
+<div class="hideInheritedMethod" id="hideInheritedMethod">
+<a onclick="javascript:setInheritedVisible(false,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Methods</a>
+</div>
+<div class="showInheritedMethod" id="showInheritedMethod">
+<a onclick="javascript:setInheritedVisible(true,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Methods</a>
+</div>
+</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#LazyInitializer()">LazyInitializer</a>(displayObjectClass:Class = null, positionArea:<a href="../zones/Zone.html">Zone</a> = null)</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addInitializer()">addInitializer</a>(initializer:<a href="../../common/initializers/Initializer.html">Initializer</a>):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clearInitializers()">clearInitializers</a>():void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../../common/initializers/Initializer.html#getElementTypeXMLTag()">getElementTypeXMLTag</a>():XML</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/initializers/Initializer.html">Initializer</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getRelatedObjects()">getRelatedObjects</a>():Array</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../../common/StardustElement.html#getXMLTag()">getXMLTag</a>():XML</div>
+<div class="summaryTableDescription">
+   Returns the root tag of the XML representation.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/StardustElement.html">StardustElement</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getXMLTagName()">getXMLTagName</a>():String</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../../common/initializers/CompositeInitializer.html#initialize()">initialize</a>(particle:<a href="../../common/particles/Particle.html">Particle</a>):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/initializers/CompositeInitializer.html">CompositeInitializer</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#parseXML()">parseXML</a>(xml:XML, builder:<a href="../../common/xml/XMLBuilder.html">XMLBuilder</a> = null):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../../common/initializers/CompositeInitializer.html#recycleInfo()">recycleInfo</a>(particle:<a href="../../common/particles/Particle.html">Particle</a>):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/initializers/CompositeInitializer.html">CompositeInitializer</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeInitializer()">removeInitializer</a>(initializer:<a href="../../common/initializers/Initializer.html">Initializer</a>):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../../common/initializers/CompositeInitializer.html#sortInitializers()">sortInitializers</a>(initializer:<a href="../../common/initializers/Initializer.html">Initializer</a> = null):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/initializers/CompositeInitializer.html">CompositeInitializer</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toXML()">toXML</a>():XML</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+</table>
+</div>
+<a name="protectedMethodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Methods</div>
+<table id="summaryTableProtectedMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#superAddInitializer()">superAddInitializer</a>(initializer:<a href="../../common/initializers/Initializer.html">Initializer</a>):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyInitializer</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="alpha"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">alpha</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>alpha:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Average alpha.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get alpha():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set alpha(value:Number):void</code>
+<br>
+</div>
+<a name="alphaVar"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">alphaVar</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>alphaVar:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Alpha variation.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get alphaVar():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set alphaVar(value:Number):void</code>
+<br>
+</div>
+<a name="collisionRadius"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">collisionRadius</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>collisionRadius:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Particle collision radius.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get collisionRadius():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set collisionRadius(value:Number):void</code>
+<br>
+</div>
+<a name="direction"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">direction</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>direction:<a href="../geom/Vec2D.html">Vec2D</a></code>&nbsp;&nbsp;[read-only]<p>
+   Average direction.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get direction():<a href="../geom/Vec2D.html">Vec2D</a></code>
+<br>
+</div>
+<a name="directionVar"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">directionVar</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>directionVar:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Direction variation, in degrees.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get directionVar():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set directionVar(value:Number):void</code>
+<br>
+</div>
+<a name="displayObjectClass"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">displayObjectClass</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>displayObjectClass:Class</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get displayObjectClass():Class</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set displayObjectClass(value:Class):void</code>
+<br>
+</div>
+<a name="displayObjectClassParams"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">displayObjectClassParams</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>displayObjectClassParams:Array</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get displayObjectClassParams():Array</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set displayObjectClassParams(value:Array):void</code>
+<br>
+</div>
+<a name="life"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">life</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>life:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Average life.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get life():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set life(value:Number):void</code>
+<br>
+</div>
+<a name="lifeVar"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">lifeVar</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>lifeVar:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Life variation.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get lifeVar():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set lifeVar(value:Number):void</code>
+<br>
+</div>
+<a name="mask"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">mask</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>mask:int</code>&nbsp;&nbsp;[read-write]<p>
+   Particle mask value.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get mask():int</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set mask(value:int):void</code>
+<br>
+</div>
+<a name="mass"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">mass</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>mass:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Average mass.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get mass():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set mass(value:Number):void</code>
+<br>
+</div>
+<a name="massVar"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">massVar</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>massVar:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Mass variation.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get massVar():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set massVar(value:Number):void</code>
+<br>
+</div>
+<a name="omega"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">omega</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>omega:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Average omega (angular velocity).
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get omega():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set omega(value:Number):void</code>
+<br>
+</div>
+<a name="omegaVar"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">omegaVar</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>omegaVar:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Omega variation.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get omegaVar():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set omegaVar(value:Number):void</code>
+<br>
+</div>
+<a name="position"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">position</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>position:<a href="../zones/Zone.html">Zone</a></code>&nbsp;&nbsp;[read-write]<p>
+   Position zone.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get position():<a href="../zones/Zone.html">Zone</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set position(value:<a href="../zones/Zone.html">Zone</a>):void</code>
+<br>
+</div>
+<a name="rotation"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rotation</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>rotation:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Average rotation.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get rotation():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set rotation(value:Number):void</code>
+<br>
+</div>
+<a name="rotationVar"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">rotationVar</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>rotationVar:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Rotation variation.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get rotationVar():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set rotationVar(value:Number):void</code>
+<br>
+</div>
+<a name="scale"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scale</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>scale:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Average scale.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get scale():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set scale(value:Number):void</code>
+<br>
+</div>
+<a name="scaleVar"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">scaleVar</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>scaleVar:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Scale variation.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get scaleVar():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set scaleVar(value:Number):void</code>
+<br>
+</div>
+<a name="speed"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">speed</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>speed:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Average speed.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get speed():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set speed(value:Number):void</code>
+<br>
+</div>
+<a name="speedVar"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">speedVar</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>speedVar:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Speed variation.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get speedVar():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set speedVar(value:Number):void</code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="LazyInitializer()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">LazyInitializer</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function LazyInitializer(displayObjectClass:Class = null, positionArea:<a href="../zones/Zone.html">Zone</a> = null)</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">displayObjectClass</span>:Class</code> (default = <code>null</code>)<code></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">positionArea</span>:<a href="../zones/Zone.html">Zone</a></code> (default = <code>null</code>)<code></code></td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addInitializer()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addInitializer</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function addInitializer(initializer:<a href="../../common/initializers/Initializer.html">Initializer</a>):void</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">initializer</span>:<a href="../../common/initializers/Initializer.html">Initializer</a></code></td>
+</tr>
+</table>
+</div>
+<a name="clearInitializers()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clearInitializers</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function clearInitializers():void</code>
+</div>
+<a name="getRelatedObjects()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getRelatedObjects</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function getRelatedObjects():Array</code>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Array</code></td>
+</tr>
+</table>
+</div>
+<a name="getXMLTagName()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getXMLTagName</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function getXMLTagName():String</code>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code></td>
+</tr>
+</table>
+</div>
+<a name="parseXML()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">parseXML</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function parseXML(xml:XML, builder:<a href="../../common/xml/XMLBuilder.html">XMLBuilder</a> = null):void</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">xml</span>:XML</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">builder</span>:<a href="../../common/xml/XMLBuilder.html">XMLBuilder</a></code> (default = <code>null</code>)<code></code></td>
+</tr>
+</table>
+</div>
+<a name="removeInitializer()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeInitializer</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function removeInitializer(initializer:<a href="../../common/initializers/Initializer.html">Initializer</a>):void</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">initializer</span>:<a href="../../common/initializers/Initializer.html">Initializer</a></code></td>
+</tr>
+</table>
+</div>
+<a name="superAddInitializer()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">superAddInitializer</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function superAddInitializer(initializer:<a href="../../common/initializers/Initializer.html">Initializer</a>):void</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">initializer</span>:<a href="../../common/initializers/Initializer.html">Initializer</a></code></td>
+</tr>
+</table>
+</div>
+<a name="toXML()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toXML</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function toXML():XML</code>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>XML</code></td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

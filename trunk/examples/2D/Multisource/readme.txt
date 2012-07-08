@@ -1,0 +1,1 @@
+This example uses the SwitchInitializer to choose among three Position initializers, creating an effect of multiple particle sources.

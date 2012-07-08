@@ -1,0 +1,7 @@
+#labels Featured
+==Away3D 3.6 Essentials==
+[https://www.packtpub.com/away3d-36-essentials/book Packt Page]
+
+[http://www.amazon.com/Away3D-3-6-Essentials-Matthew-Casperson/dp/184951206X/ Amazon Page]
+
+Several sections cover the integration of Stardust with Away3D in Chapter 9.

@@ -1,0 +1,1 @@
+The PV3DDisplayObject3DClass initializer and the PV3DDisplayObject3DRenderer can visualize 3D particles as Papervision3D DisplayObject3D objects.

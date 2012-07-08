@@ -1,0 +1,58 @@
+﻿package $(Package) $(CSLB) {
+	import idv.cjcat.stardust.common.xml.XMLBuilder;
+	import idv.cjcat.stardust.threeD.deflectors.Deflector3D;
+	import idv.cjcat.stardust.threeD.particles.Particle3D;
+	import idv.cjcat.stardust.threeD.geom.MotionData6D;
+	import idv.cjcat.stardust.threeD.geom.MotionData6DPool;
+	
+	public class $(FileName) extends Deflector3D {
+		
+		public function $(FileName)() {
+			
+		}
+		
+		override protected function calculateMotionData6D(particle:Particle3D):MotionData6D {
+			var x:Number;
+			var y:Number;
+			var z:Number;
+			var vx:Number;
+			var vy:Number;
+			var vz:Number;
+			
+			$(EntryPoint)
+			
+			return MotionData6DPool.get(x, y, z, vx, vy, vz);
+		}
+		
+		
+		//XML
+		//------------------------------------------------------------------------------------------------
+		
+		override public function getRelatedObjects():Array {
+			return [];
+		}
+		
+		override public function getXMLTagName():String {
+			return "$(FileName)";
+		}
+		
+		override public function toXML():XML {
+			var xml:XML = super.toXML();
+			
+			//add custom attributes or children nodes to the XML representation
+			
+			
+			return xml;
+		}
+		
+		override public function parseXML(xml:XML, builder:XMLBuilder = null):void {
+			super.parseXML(xml, builder);
+			
+			//parse custom attributes or children nodes from the XML representation
+			
+		}
+		
+		//------------------------------------------------------------------------------------------------
+		//end of XML
+	}
+}

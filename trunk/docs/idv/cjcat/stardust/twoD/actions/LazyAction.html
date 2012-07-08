@@ -1,0 +1,1041 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print">
+<meta content="LazyAction,idv.cjcat.stardust.twoD.actions.LazyAction,acceleration,ageMultiplier,collision,damping,deathTrigger,deflectors,gravity,inAlpha,inAlphaFunction,inAlphaFunctionExtraParams,inAlphaLifespan,inScale,inScaleFunction,inScaleFunctionExtraParams,inScaleLifespan,mask,moveMultiplier,orientationFactor,orientationOffset,oriented,outAlpha,outAlphaFunction,outAlphaFunctionExtraParams,outAlphaLifespan,outScale,outScaleFunction,outScaleFunctionExtraParams,outScaleLifespan,speedLimit,spinMultiplier,stardustSpriteUpdate,undead,addAction,clearActions,getRelatedObjects,getXMLTagName,parseXML,removeAction,superAddAction,toXML" name="keywords">
+<title>idv.cjcat.stardust.twoD.actions.LazyAction</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'LazyAction - API Documentation';
+				var baseRef = '../../../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Stardust Particle Engine v1.3</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../../all-classes.html')" href="../../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../../all-classes.html')" href="../../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../../index-list.html')" href="../../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../../index.html?idv/cjcat/stardust/twoD/actions/LazyAction.html&amp;idv/cjcat/stardust/twoD/actions/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;LazyAction</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class LazyAction"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">idv.cjcat.stardust.twoD.actions</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class LazyAction</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">LazyAction <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../../images/inherit-arrow.gif"> <a href="../../common/actions/CompositeAction.html">CompositeAction</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../../images/inherit-arrow.gif"> <a href="../../common/actions/Action.html">Action</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../../images/inherit-arrow.gif"> <a href="../../common/StardustElement.html">StardustElement</a></td>
+</tr>
+</table>
+<p></p>
+  This is a wrapper class of several common and useful actions. 
+  As it's name suggests, you can use this class whenever you're too lazy to create actions one by one.
+  You don't directly control these component actions; 
+  instead, you use the abstract properties provided by this class.
+   
+  <p>
+  This composite action is consisted of the folling actions:
+  <ul>
+  <li>Move (multiplier = 1 by default)</li>
+  <li>Spin (multiplier = 1 by default)</li>
+  <li>Oriented (false by default)</li>
+  <li>DeathLife (active by default)</li>
+  <li>DeathTrigger (empty by default)</li>
+  <li>Collision (inactive by default)</li>
+  <li>SpeedLimit (inactive by default)</li>
+  <li>Deflect (empty by default)</li>
+  <li>Gravity (empty by default)</li>
+  <li>Damping (zero damping by default)</li>
+  <li>Acceleration (zero acceleration by default)</li>
+  <li>ScaleCurve (zero in and out lifespans by default)</li>
+  <li>AlphaCurve (zero in and out lifespans by default)</li>
+  </ul>
+  </p>
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<div class="showHideLinks">
+<div class="hideInheritedProperty" id="hideInheritedProperty">
+<a onclick="javascript:setInheritedVisible(false,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Properties</a>
+</div>
+<div class="showInheritedProperty" id="showInheritedProperty">
+<a onclick="javascript:setInheritedVisible(true,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Properties</a>
+</div>
+</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#acceleration">acceleration</a> : Number<div class="summaryTableDescription">
+   The particles' velocity acceleration.</div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/actions/Action.html#active">active</a> : Boolean<div class="summaryTableDescription">
+   Denotes if the action is active, true by default.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/Action.html">Action</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ageMultiplier">ageMultiplier</a> : Number<div class="summaryTableDescription">
+   The age action's multiplier.</div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/actions/CompositeAction.html#checkComponentMasks">checkComponentMasks</a> : Boolean<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/CompositeAction.html">CompositeAction</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#collision">collision</a> : Boolean<div class="summaryTableDescription">
+   Whether particles would collide against each other.</div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#damping">damping</a> : Number<div class="summaryTableDescription">
+   The velocity damping coefficient.</div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#deathTrigger">deathTrigger</a> : <a href="../../common/actions/triggers/DeathTrigger.html">DeathTrigger</a>
+<div class="summaryTableDescription">[read-only]
+   The death trigger for particles.</div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#deflectors">deflectors</a> : <a href="../actions/Deflect.html">Deflect</a>
+<div class="summaryTableDescription">[read-only]
+   You can add deflectors to the simulation with this <code>Deflect</code> object reference.</div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#gravity">gravity</a> : <a href="../actions/Gravity.html">Gravity</a>
+<div class="summaryTableDescription">[read-only]
+   You can add gravity fields to the simulation with this <code>Gravity</code> object reference.</div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#inAlpha">inAlpha</a> : Number<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#inAlphaFunction">inAlphaFunction</a> : Function<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#inAlphaFunctionExtraParams">inAlphaFunctionExtraParams</a> : Array<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#inAlphaLifespan">inAlphaLifespan</a> : Number<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#inScale">inScale</a> : Number<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#inScaleFunction">inScaleFunction</a> : Function<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#inScaleFunctionExtraParams">inScaleFunctionExtraParams</a> : Array<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#inScaleLifespan">inScaleLifespan</a> : Number<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#mask">mask</a> : int<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#moveMultiplier">moveMultiplier</a> : Number<div class="summaryTableDescription">
+   The move action's multiplier.</div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/StardustElement.html#name">name</a> : String<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/StardustElement.html">StardustElement</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/actions/CompositeAction.html#needsSortedParticles">needsSortedParticles</a> : Boolean<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/CompositeAction.html">CompositeAction</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/actions/Action.html#onAdd">onAdd</a> : ISignal<div class="summaryTableDescription">
+   Dispatched when the added to an emitter.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/Action.html">Action</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/actions/Action.html#onPriorityChange">onPriorityChange</a> : ISignal<div class="summaryTableDescription">
+   Dispatched when the action's priority is changed.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/Action.html">Action</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/actions/Action.html#onRemove">onRemove</a> : ISignal<div class="summaryTableDescription">
+   Dispatched when the removed from an emitter.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/Action.html">Action</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#orientationFactor">orientationFactor</a> : Number<div class="summaryTableDescription">
+   The orientation factor, 1 by default.</div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#orientationOffset">orientationOffset</a> : Number<div class="summaryTableDescription">
+   The orientation offset, 90 by default.</div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#oriented">oriented</a> : Boolean<div class="summaryTableDescription">
+   Whether the particles rotatoin are oriented to their velocities.</div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#outAlpha">outAlpha</a> : Number<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#outAlphaFunction">outAlphaFunction</a> : Function<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#outAlphaFunctionExtraParams">outAlphaFunctionExtraParams</a> : Array<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#outAlphaLifespan">outAlphaLifespan</a> : Number<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#outScale">outScale</a> : Number<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#outScaleFunction">outScaleFunction</a> : Function<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#outScaleFunctionExtraParams">outScaleFunctionExtraParams</a> : Array<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#outScaleLifespan">outScaleLifespan</a> : Number<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/actions/Action.html#priority">priority</a> : int<div class="summaryTableDescription">
+   Actions will be sorted by the associated emitter according to their priorities.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/Action.html">Action</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/actions/Action.html#skipThisAction">skipThisAction</a> : Boolean<div class="summaryTableDescription">
+   Reset to false on each emitter step.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/Action.html">Action</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#speedLimit">speedLimit</a> : Number<div class="summaryTableDescription">
+   The particles' speed limit.</div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#spinMultiplier">spinMultiplier</a> : Number<div class="summaryTableDescription">
+   The spin action's multiplier.</div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#stardustSpriteUpdate">stardustSpriteUpdate</a> : Boolean<div class="summaryTableDescription">
+   Whether the display class is a <code>StardustSprite</code> subclass, false by default.</div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/actions/Action.html#supports2D">supports2D</a> : Boolean<div class="summaryTableDescription">
+   Whether this action supports 2D.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/Action.html">Action</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/actions/Action.html#supports3D">supports3D</a> : Boolean<div class="summaryTableDescription">
+   Whether this action supports 3D.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/Action.html">Action</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#undead">undead</a> : Boolean<div class="summaryTableDescription">
+   If set to true, particles would not be marked dead when their lives are less than or equal to zero.</div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<div class="showHideLinks">
+<div class="hideInheritedMethod" id="hideInheritedMethod">
+<a onclick="javascript:setInheritedVisible(false,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Methods</a>
+</div>
+<div class="showInheritedMethod" id="showInheritedMethod">
+<a onclick="javascript:setInheritedVisible(true,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Methods</a>
+</div>
+</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#LazyAction()">LazyAction</a>()</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addAction()">addAction</a>(action:<a href="../../common/actions/Action.html">Action</a>):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clearActions()">clearActions</a>():void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../../common/actions/Action.html#getElementTypeXMLTag()">getElementTypeXMLTag</a>():XML</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/Action.html">Action</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getRelatedObjects()">getRelatedObjects</a>():Array</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../../common/StardustElement.html#getXMLTag()">getXMLTag</a>():XML</div>
+<div class="summaryTableDescription">
+   Returns the root tag of the XML representation.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/StardustElement.html">StardustElement</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getXMLTagName()">getXMLTagName</a>():String</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#parseXML()">parseXML</a>(xml:XML, builder:<a href="../../common/xml/XMLBuilder.html">XMLBuilder</a> = null):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../../common/actions/CompositeAction.html#postUpdate()">postUpdate</a>(emitter:<a href="../../common/emitters/Emitter.html">Emitter</a>, time:Number):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/CompositeAction.html">CompositeAction</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../../common/actions/CompositeAction.html#preUpdate()">preUpdate</a>(emitter:<a href="../../common/emitters/Emitter.html">Emitter</a>, time:Number):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/CompositeAction.html">CompositeAction</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeAction()">removeAction</a>(action:<a href="../../common/actions/Action.html">Action</a>):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../../common/actions/CompositeAction.html#sortActions()">sortActions</a>(action:<a href="../../common/actions/Action.html">Action</a> = null):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/CompositeAction.html">CompositeAction</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toXML()">toXML</a>():XML</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../../common/actions/CompositeAction.html#update()">update</a>(emitter:<a href="../../common/emitters/Emitter.html">Emitter</a>, particle:<a href="../../common/particles/Particle.html">Particle</a>, time:Number):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/CompositeAction.html">CompositeAction</a></td>
+</tr>
+</table>
+</div>
+<a name="protectedMethodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Methods</div>
+<table id="summaryTableProtectedMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#superAddAction()">superAddAction</a>(action:<a href="../../common/actions/Action.html">Action</a>):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LazyAction</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="acceleration"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">acceleration</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>acceleration:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The particles' velocity acceleration.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get acceleration():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set acceleration(value:Number):void</code>
+<br>
+</div>
+<a name="ageMultiplier"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ageMultiplier</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>ageMultiplier:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The age action's multiplier.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get ageMultiplier():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set ageMultiplier(value:Number):void</code>
+<br>
+</div>
+<a name="collision"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">collision</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>collision:Boolean</code>&nbsp;&nbsp;[read-write]<p>
+   Whether particles would collide against each other.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get collision():Boolean</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set collision(value:Boolean):void</code>
+<br>
+</div>
+<a name="damping"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">damping</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>damping:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The velocity damping coefficient.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get damping():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set damping(value:Number):void</code>
+<br>
+</div>
+<a name="deathTrigger"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">deathTrigger</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>deathTrigger:<a href="../../common/actions/triggers/DeathTrigger.html">DeathTrigger</a></code>&nbsp;&nbsp;[read-only]<p>
+   The death trigger for particles. 
+   You can add actions that you wish to act on particles upon their death to this action trigger.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get deathTrigger():<a href="../../common/actions/triggers/DeathTrigger.html">DeathTrigger</a></code>
+<br>
+</div>
+<a name="deflectors"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">deflectors</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>deflectors:<a href="../actions/Deflect.html">Deflect</a></code>&nbsp;&nbsp;[read-only]<p>
+   You can add deflectors to the simulation with this <code>Deflect</code> object reference.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get deflectors():<a href="../actions/Deflect.html">Deflect</a></code>
+<br>
+</div>
+<a name="gravity"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">gravity</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>gravity:<a href="../actions/Gravity.html">Gravity</a></code>&nbsp;&nbsp;[read-only]<p>
+   You can add gravity fields to the simulation with this <code>Gravity</code> object reference.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get gravity():<a href="../actions/Gravity.html">Gravity</a></code>
+<br>
+</div>
+<a name="inAlpha"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">inAlpha</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>inAlpha:Number</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get inAlpha():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set inAlpha(value:Number):void</code>
+<br>
+</div>
+<a name="inAlphaFunction"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">inAlphaFunction</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>inAlphaFunction:Function</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get inAlphaFunction():Function</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set inAlphaFunction(value:Function):void</code>
+<br>
+</div>
+<a name="inAlphaFunctionExtraParams"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">inAlphaFunctionExtraParams</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>inAlphaFunctionExtraParams:Array</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get inAlphaFunctionExtraParams():Array</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set inAlphaFunctionExtraParams(value:Array):void</code>
+<br>
+</div>
+<a name="inAlphaLifespan"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">inAlphaLifespan</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>inAlphaLifespan:Number</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get inAlphaLifespan():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set inAlphaLifespan(value:Number):void</code>
+<br>
+</div>
+<a name="inScale"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">inScale</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>inScale:Number</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get inScale():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set inScale(value:Number):void</code>
+<br>
+</div>
+<a name="inScaleFunction"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">inScaleFunction</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>inScaleFunction:Function</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get inScaleFunction():Function</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set inScaleFunction(value:Function):void</code>
+<br>
+</div>
+<a name="inScaleFunctionExtraParams"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">inScaleFunctionExtraParams</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>inScaleFunctionExtraParams:Array</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get inScaleFunctionExtraParams():Array</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set inScaleFunctionExtraParams(value:Array):void</code>
+<br>
+</div>
+<a name="inScaleLifespan"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">inScaleLifespan</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>inScaleLifespan:Number</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get inScaleLifespan():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set inScaleLifespan(value:Number):void</code>
+<br>
+</div>
+<a name="mask"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">mask</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>mask:int</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get mask():int</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set mask(value:int):void</code>
+<br>
+</div>
+<a name="moveMultiplier"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">moveMultiplier</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>moveMultiplier:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The move action's multiplier.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get moveMultiplier():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set moveMultiplier(value:Number):void</code>
+<br>
+</div>
+<a name="orientationFactor"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">orientationFactor</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>orientationFactor:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The orientation factor, 1 by default.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get orientationFactor():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set orientationFactor(value:Number):void</code>
+<br>
+</div>
+<a name="orientationOffset"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">orientationOffset</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>orientationOffset:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The orientation offset, 90 by default.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get orientationOffset():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set orientationOffset(value:Number):void</code>
+<br>
+</div>
+<a name="oriented"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">oriented</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>oriented:Boolean</code>&nbsp;&nbsp;[read-write]<p>
+   Whether the particles rotatoin are oriented to their velocities.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get oriented():Boolean</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set oriented(value:Boolean):void</code>
+<br>
+</div>
+<a name="outAlpha"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">outAlpha</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>outAlpha:Number</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get outAlpha():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set outAlpha(value:Number):void</code>
+<br>
+</div>
+<a name="outAlphaFunction"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">outAlphaFunction</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>outAlphaFunction:Function</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get outAlphaFunction():Function</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set outAlphaFunction(value:Function):void</code>
+<br>
+</div>
+<a name="outAlphaFunctionExtraParams"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">outAlphaFunctionExtraParams</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>outAlphaFunctionExtraParams:Array</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get outAlphaFunctionExtraParams():Array</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set outAlphaFunctionExtraParams(value:Array):void</code>
+<br>
+</div>
+<a name="outAlphaLifespan"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">outAlphaLifespan</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>outAlphaLifespan:Number</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get outAlphaLifespan():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set outAlphaLifespan(value:Number):void</code>
+<br>
+</div>
+<a name="outScale"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">outScale</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>outScale:Number</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get outScale():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set outScale(value:Number):void</code>
+<br>
+</div>
+<a name="outScaleFunction"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">outScaleFunction</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>outScaleFunction:Function</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get outScaleFunction():Function</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set outScaleFunction(value:Function):void</code>
+<br>
+</div>
+<a name="outScaleFunctionExtraParams"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">outScaleFunctionExtraParams</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>outScaleFunctionExtraParams:Array</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get outScaleFunctionExtraParams():Array</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set outScaleFunctionExtraParams(value:Array):void</code>
+<br>
+</div>
+<a name="outScaleLifespan"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">outScaleLifespan</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>outScaleLifespan:Number</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get outScaleLifespan():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set outScaleLifespan(value:Number):void</code>
+<br>
+</div>
+<a name="speedLimit"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">speedLimit</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>speedLimit:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The particles' speed limit.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get speedLimit():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set speedLimit(value:Number):void</code>
+<br>
+</div>
+<a name="spinMultiplier"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">spinMultiplier</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>spinMultiplier:Number</code>&nbsp;&nbsp;[read-write]<p>
+   The spin action's multiplier.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get spinMultiplier():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set spinMultiplier(value:Number):void</code>
+<br>
+</div>
+<a name="stardustSpriteUpdate"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">stardustSpriteUpdate</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>stardustSpriteUpdate:Boolean</code>&nbsp;&nbsp;[read-write]<p>
+   Whether the display class is a <code>StardustSprite</code> subclass, false by default.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get stardustSpriteUpdate():Boolean</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set stardustSpriteUpdate(value:Boolean):void</code>
+<br>
+</div>
+<a name="undead"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">undead</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>undead:Boolean</code>&nbsp;&nbsp;[read-write]<p>
+   If set to true, particles would not be marked dead when their lives are less than or equal to zero.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get undead():Boolean</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set undead(value:Boolean):void</code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="LazyAction()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">LazyAction</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function LazyAction()</code>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addAction()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addAction</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function addAction(action:<a href="../../common/actions/Action.html">Action</a>):void</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">action</span>:<a href="../../common/actions/Action.html">Action</a></code></td>
+</tr>
+</table>
+</div>
+<a name="clearActions()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clearActions</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function clearActions():void</code>
+</div>
+<a name="getRelatedObjects()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getRelatedObjects</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function getRelatedObjects():Array</code>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Array</code></td>
+</tr>
+</table>
+</div>
+<a name="getXMLTagName()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getXMLTagName</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function getXMLTagName():String</code>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code></td>
+</tr>
+</table>
+</div>
+<a name="parseXML()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">parseXML</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function parseXML(xml:XML, builder:<a href="../../common/xml/XMLBuilder.html">XMLBuilder</a> = null):void</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">xml</span>:XML</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">builder</span>:<a href="../../common/xml/XMLBuilder.html">XMLBuilder</a></code> (default = <code>null</code>)<code></code></td>
+</tr>
+</table>
+</div>
+<a name="removeAction()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeAction</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function removeAction(action:<a href="../../common/actions/Action.html">Action</a>):void</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">action</span>:<a href="../../common/actions/Action.html">Action</a></code></td>
+</tr>
+</table>
+</div>
+<a name="superAddAction()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">superAddAction</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function superAddAction(action:<a href="../../common/actions/Action.html">Action</a>):void</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">action</span>:<a href="../../common/actions/Action.html">Action</a></code></td>
+</tr>
+</table>
+</div>
+<a name="toXML()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toXML</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function toXML():XML</code>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>XML</code></td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

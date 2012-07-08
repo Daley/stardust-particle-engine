@@ -1,0 +1,2 @@
+The orange-to-red color transition for the particles is a timeline animation created in Flash IDE.
+The turbulence effect is created using a Gravity action with BitmapField, which internally calculates gravitational acceleration from a perlin noise bitmap.

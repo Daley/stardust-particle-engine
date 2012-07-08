@@ -1,0 +1,369 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print">
+<meta content="Move,idv.cjcat.stardust.twoD.actions.Move,multiplier,getXMLTagName,parseXML,preUpdate,toXML,update" name="keywords">
+<title>idv.cjcat.stardust.twoD.actions.Move</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Move - API Documentation';
+				var baseRef = '../../../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Stardust Particle Engine v1.3</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../../all-classes.html')" href="../../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../../all-classes.html')" href="../../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../../index-list.html')" href="../../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../../index.html?idv/cjcat/stardust/twoD/actions/Move.html&amp;idv/cjcat/stardust/twoD/actions/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Move</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Move"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">idv.cjcat.stardust.twoD.actions</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class Move</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Move <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../../images/inherit-arrow.gif"> <a href="Action2D.html">Action2D</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../../images/inherit-arrow.gif"> <a href="../../common/actions/Action.html">Action</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../../images/inherit-arrow.gif"> <a href="../../common/StardustElement.html">StardustElement</a></td>
+</tr>
+</table>
+<p></p>
+  Causes a particle's position to change according to its velocity.
+  
+  <p>
+  Default priority = -4;
+  </p>
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<div class="showHideLinks">
+<div class="hideInheritedProperty" id="hideInheritedProperty">
+<a onclick="javascript:setInheritedVisible(false,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Properties</a>
+</div>
+<div class="showInheritedProperty" id="showInheritedProperty">
+<a onclick="javascript:setInheritedVisible(true,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Properties</a>
+</div>
+</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/actions/Action.html#active">active</a> : Boolean<div class="summaryTableDescription">
+   Denotes if the action is active, true by default.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/Action.html">Action</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/actions/Action.html#mask">mask</a> : int<div class="summaryTableDescription">
+   The action will affect a particle only if it's active and the bitwise AND of the action's mask and the particle's mask is non-zero, 
+   1 by default.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/Action.html">Action</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#multiplier">multiplier</a> : Number<div class="summaryTableDescription">
+   The multiplier of movement, 1 by default.</div>
+</td><td class="summaryTableOwnerCol">Move</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/StardustElement.html#name">name</a> : String<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/StardustElement.html">StardustElement</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/actions/Action.html#needsSortedParticles">needsSortedParticles</a> : Boolean<div class="summaryTableDescription">
+   Tells the emitter whether this action requires that particles must be sorted before the <code>update()</code> calls.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/Action.html">Action</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/actions/Action.html#onAdd">onAdd</a> : ISignal<div class="summaryTableDescription">
+   Dispatched when the added to an emitter.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/Action.html">Action</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/actions/Action.html#onPriorityChange">onPriorityChange</a> : ISignal<div class="summaryTableDescription">
+   Dispatched when the action's priority is changed.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/Action.html">Action</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/actions/Action.html#onRemove">onRemove</a> : ISignal<div class="summaryTableDescription">
+   Dispatched when the removed from an emitter.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/Action.html">Action</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/actions/Action.html#priority">priority</a> : int<div class="summaryTableDescription">
+   Actions will be sorted by the associated emitter according to their priorities.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/Action.html">Action</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/actions/Action.html#skipThisAction">skipThisAction</a> : Boolean<div class="summaryTableDescription">
+   Reset to false on each emitter step.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/Action.html">Action</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/actions/Action.html#supports2D">supports2D</a> : Boolean<div class="summaryTableDescription">
+   Whether this action supports 2D.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/Action.html">Action</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="../../common/actions/Action.html#supports3D">supports3D</a> : Boolean<div class="summaryTableDescription">
+   Whether this action supports 3D.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/Action.html">Action</a></td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<div class="showHideLinks">
+<div class="hideInheritedMethod" id="hideInheritedMethod">
+<a onclick="javascript:setInheritedVisible(false,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Methods</a>
+</div>
+<div class="showInheritedMethod" id="showInheritedMethod">
+<a onclick="javascript:setInheritedVisible(true,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Methods</a>
+</div>
+</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#Move()">Move</a>(multiplier:Number = 1)</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Move</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../../common/actions/Action.html#getElementTypeXMLTag()">getElementTypeXMLTag</a>():XML</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/Action.html">Action</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../../common/StardustElement.html#getRelatedObjects()">getRelatedObjects</a>():Array</div>
+<div class="summaryTableDescription">
+   [Abstract Method] Returns the related objects of the element.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/StardustElement.html">StardustElement</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../../common/StardustElement.html#getXMLTag()">getXMLTag</a>():XML</div>
+<div class="summaryTableDescription">
+   Returns the root tag of the XML representation.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/StardustElement.html">StardustElement</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getXMLTagName()">getXMLTagName</a>():String</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Move</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#parseXML()">parseXML</a>(xml:XML, builder:<a href="../../common/xml/XMLBuilder.html">XMLBuilder</a> = null):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Move</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="../../common/actions/Action.html#postUpdate()">postUpdate</a>(emitter:<a href="../../common/emitters/Emitter.html">Emitter</a>, time:Number):void</div>
+<div class="summaryTableDescription">
+   [Template Method] This method is called once after each <code>Emitter.step()</code> method call, 
+   after the <code>update()</code> calls with each particles in the emitter.</div>
+</td><td class="summaryTableOwnerCol"><a href="../../common/actions/Action.html">Action</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#preUpdate()">preUpdate</a>(emitter:<a href="../../common/emitters/Emitter.html">Emitter</a>, time:Number):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Move</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toXML()">toXML</a>():XML</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Move</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#update()">update</a>(emitter:<a href="../../common/emitters/Emitter.html">Emitter</a>, particle:<a href="../../common/particles/Particle.html">Particle</a>, time:Number):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">Move</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="multiplier"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">multiplier</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var multiplier:Number</code><p>
+   The multiplier of movement, 1 by default.
+   
+   </p><p>
+   For instance, a multiplier value of 2 causes a particle to move twice as fast as normal.
+   </p>
+   </div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="Move()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">Move</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function Move(multiplier:Number = 1)</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">multiplier</span>:Number</code> (default = <code>1</code>)<code></code></td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="getXMLTagName()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getXMLTagName</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function getXMLTagName():String</code>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code></td>
+</tr>
+</table>
+</div>
+<a name="parseXML()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">parseXML</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function parseXML(xml:XML, builder:<a href="../../common/xml/XMLBuilder.html">XMLBuilder</a> = null):void</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">xml</span>:XML</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">builder</span>:<a href="../../common/xml/XMLBuilder.html">XMLBuilder</a></code> (default = <code>null</code>)<code></code></td>
+</tr>
+</table>
+</div>
+<a name="preUpdate()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">preUpdate</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function preUpdate(emitter:<a href="../../common/emitters/Emitter.html">Emitter</a>, time:Number):void</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">emitter</span>:<a href="../../common/emitters/Emitter.html">Emitter</a></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">time</span>:Number</code></td>
+</tr>
+</table>
+</div>
+<a name="toXML()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toXML</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function toXML():XML</code>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>XML</code></td>
+</tr>
+</table>
+</div>
+<a name="update()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">update</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function update(emitter:<a href="../../common/emitters/Emitter.html">Emitter</a>, particle:<a href="../../common/particles/Particle.html">Particle</a>, time:Number):void</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">emitter</span>:<a href="../../common/emitters/Emitter.html">Emitter</a></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">particle</span>:<a href="../../common/particles/Particle.html">Particle</a></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">time</span>:Number</code></td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

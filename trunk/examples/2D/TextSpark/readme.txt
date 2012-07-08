@@ -1,0 +1,3 @@
+A BitmapZone object returns random points with coordinates corresponding to a bitmap's non-transparent pixel coordinates.
+In each enterFrame loop, the sparkMask_mc is drawn to a BitmapData object, which is in turn used by a BitmapZone object to calculate newly spawned particles' positions.
+The ImpulseClock listens for the EmitterEvent.EMITTER_EMPTY event and causes the emitter to burst out new paritcles once the emitter is empty of particles.
