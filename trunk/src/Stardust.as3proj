@@ -64,16 +64,7 @@
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>
-    <element path="..\libs\Alternativa3D 7.6.0.swc" />
-    <element path="..\libs\Away3D 3.6.0.swc" />
-    <element path="..\libs\Away3DLite 1.0.0.swc" />
-    <element path="..\libs\CJSignals 1.0.25.swc" />
-    <element path="..\libs\Flare3D.swc" />
-    <element path="..\libs\ND3D 0.2.swc" />
-    <element path="..\libs\Papervision3D_2.0.883.swc" />
-    <element path="..\libs\Pyronova 2.0.39 Alpha.swc" />
-    <element path="..\libs\ZedBox-FP9 1.1.swc" />
-    <element path="..\libs\starling-v1.1.swc" />
+    <!-- example: <element path="..." /> -->
   </externalLibraryPaths>
   <!-- Runtime Shared Libraries -->
   <rslPaths>

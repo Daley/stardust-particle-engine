@@ -1,1 +1,0 @@
-Copy the "Stardust" folder to "<FlashDevelop directory>\Templates\ProjectFiles\AS3Project" for standalone FlashDevleop, or to "C:\Documents and Settings\User Name\Local Settings\Application Data\FlashDevelop\Templates\ProjectFiles\AS3Project" for normally installed version.
