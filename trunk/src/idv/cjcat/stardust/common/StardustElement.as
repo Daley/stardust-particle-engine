@@ -1,12 +1,12 @@
 ﻿package idv.cjcat.stardust.common {
 	import flash.utils.Dictionary;
 	import idv.cjcat.stardust.common.xml.XMLBuilder;
-	import idv.cjcat.stardust.common.xml.XMLConvertible;
+	import idv.cjcat.stardust.common.xml.XMLSerializable;
 	
 	/**
 	 * All Stardust elements are subclasses of this class.
 	 */
-	public class StardustElement implements XMLConvertible {
+	public class StardustElement implements XMLSerializable {
 		
 		private static var elementCounter:Dictionary = new Dictionary();
 		
