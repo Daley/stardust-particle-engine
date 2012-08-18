@@ -2,9 +2,9 @@
 	import idv.cjcat.stardust.threeD.geom.Vec3D;
 	
 	/**
-	 * The camera used by the <code>DisplayObjectRenderer3D</code>.
+	 * The camera used by the <code>DisplayObjectHandler3D</code>.
 	 * 
-	 * @see idv.cjcat.stardust.threeD.renderers.DisplayObjectRenderer3D
+	 * @see idv.cjcat.stardust.threeD.handlers.DisplayObjectHandler3D
 	 */
 	public class Camera3D {
 		

@@ -30,7 +30,7 @@ package idv.cjcat.stardust.threeD.away3dlite {
 			//Away3D Lite initializers
 			classes.push(Away3DLiteObject3DClass);
 			
-			//Away3D Lite renderers
+			//Away3D Lite handlers
 			classes.push(Away3DLiteObject3DHandler);
 		}
 	}

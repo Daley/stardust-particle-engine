@@ -6,10 +6,10 @@
 	
 	/**
 	 * Assigns a <code>Object3D</code> object to the <code>target</code> properties of a particle. 
-	 * This information can be visualized by <code>ND3DObject3DRenderer</code>
+	 * This information can be visualized by <code>ND3DObject3DHandler</code>
 	 * 
 	 * @see de.nulldesign.nd3d.objects.Object3D
-	 * @see idv.cjcat.stardust.threeD.nd3d.renderers.ND3DObject3DRenderer
+	 * @see idv.cjcat.stardust.threeD.nd3d.handlers.ND3DObject3DHandler
 	 */
 	public class ND3DObject3DClass extends Initializer3D {
 		

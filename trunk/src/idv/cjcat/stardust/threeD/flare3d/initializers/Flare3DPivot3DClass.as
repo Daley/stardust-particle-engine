@@ -6,9 +6,9 @@ package idv.cjcat.stardust.threeD.flare3d.initializers {
 	
 	/**
 	 * Assigns a <code>Pivot3D</code> object to the <code>target</code> properties of a particle. 
-	 * This information can be visualized by <code>Flare3DPivot3DRenderer</code>.
+	 * This information can be visualized by <code>Flare3DPivot3DHandler</code>.
 	 * 
-	 * @see idv.cjcat.stardust.threeD.flare3d.renderers.Flare3DPivot3DRenderer
+	 * @see idv.cjcat.stardust.threeD.flare3d.handlers.Flare3DPivot3DHandler
 	 */
 	public class Flare3DPivot3DClass extends Initializer3D {
 		

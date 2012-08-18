@@ -8,10 +8,10 @@
 	/**
 	 * Assigns a <code>ZedSprite</code> object to the <code>target</code> properties of a particle, 
 	 * and adds a display object (an instance of the <code>displayObjectClass</code> property) to the <code>ZedSprite</code> object's display list.
-	 * This information can be visualized by <code>ZBDisplayObjectRenderer</code>
+	 * This information can be visualized by <code>ZBDisplayObjectHandler</code>
 	 * 
 	 * @see idv.cjcat.zedbox.ZedSprite
-	 * @see idv.cjcat.stardust.threeD.zedbox.renderers.ZBDisplayObjectRenderer
+	 * @see idv.cjcat.stardust.threeD.zedbox.handlers.ZBDisplayObjectHandler
 	 */
 	public class ZBDisplayObjectClass extends Initializer3D {
 		

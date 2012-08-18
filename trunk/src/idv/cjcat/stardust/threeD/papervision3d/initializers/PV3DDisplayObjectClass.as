@@ -12,10 +12,10 @@
 	/**
 	 * Assigns a <code>Particle</code> object to the <code>target</code> properties of a particle, 
 	 * and uses a display object along with a <code>MovieParticleMaterial</code> object to create particle material.
-	 * This information can be visualized by <code>PV3DDisplayObjectRenderer</code>.
+	 * This information can be visualized by <code>PV3DDisplayObjectHandler</code>.
 	 * 
 	 * @see org.papervision3d.core.geom.renderables.Particle
-	 * @see idv.cjcat.stardust.threeD.papervision3d.renderers.PV3DDisplayObjectRenderer
+	 * @see idv.cjcat.stardust.threeD.papervision3d.handlers.PV3DDisplayObjectHandler
 	 */
 	public class PV3DDisplayObjectClass extends Initializer3D {
 		

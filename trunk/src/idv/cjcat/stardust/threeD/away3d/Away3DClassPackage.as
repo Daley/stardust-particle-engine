@@ -33,7 +33,7 @@ package idv.cjcat.stardust.threeD.away3d {
 			classes.push(Away3DObject3DClass);
 			classes.push(Away3DSprite3DClass);
 			
-			//Away3D renderers
+			//Away3D handlers
 			classes.push(Away3DObject3DHandler);
 			classes.push(Away3DSprite3DHandler);
 		}

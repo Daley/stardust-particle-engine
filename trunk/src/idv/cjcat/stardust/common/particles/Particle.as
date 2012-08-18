@@ -59,8 +59,8 @@
 		 * Custom user data of the particle.
 		 * 
 		 * <p>
-		 * Normally, this property contains information for renderers. 
-		 * For instance this property should refer to a display object for a <code>DisplayObjectRenderer</code>.
+		 * Normally, this property contains information for handlers. 
+		 * For instance this property should refer to a display object for a <code>DisplayObjectHandler</code>.
 		 * </p>
 		 */
 		public var target:*;
@@ -68,7 +68,7 @@
 		 * Particle color.
 		 * 
 		 * <p>
-		 * This information can be used by the <code>PixelRenderer</code> class for determining pixel colors.
+		 * This information can be used by the <code>PixelHandler</code> class for determining pixel colors.
 		 * </p>
 		 */
 		public var color:uint;

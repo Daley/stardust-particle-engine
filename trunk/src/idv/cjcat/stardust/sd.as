@@ -1,5 +1,5 @@
-﻿package idv.cjcat.stardust {
-	
-	/** @private */
-	public namespace sd = "http://cjcat.idv/stardust";
+﻿package idv.cjcat.stardust
+{
+  /** @private */
+  public namespace sd = "http://cjcat.idv/stardust";
 }

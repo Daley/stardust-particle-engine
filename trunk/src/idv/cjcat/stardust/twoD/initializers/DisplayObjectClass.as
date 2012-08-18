@@ -4,14 +4,14 @@
 	
 	/**
 	 * Assigns a display object to the <code>target</code> properties of a particle. 
-	 * This information can be visualized by <code>DisplayObjectRenderer</code> and <code>BitmapRenderer</code>.
+	 * This information can be visualized by <code>DisplayObjectHandler</code> and <code>BitmapHandler</code>.
 	 * 
 	 * <p>
 	 * Default priority = 1;
 	 * </p>
 	 * 
-	 * @see idv.cjcat.stardust.twoD.renderers.DisplayObjectRenderer
-	 * @see idv.cjcat.stardust.twoD.renderers.BitmapRenderer
+	 * @see idv.cjcat.stardust.twoD.handlers.DisplayObjectHandler
+	 * @see idv.cjcat.stardust.twoD.handlers.BitmapHandler
 	 */
 	public class DisplayObjectClass extends Initializer2D {
 		
