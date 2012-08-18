@@ -1,29 +1,25 @@
 ﻿package idv.cjcat.stardust.common
 {
+  import flash.utils.Dictionary;
   import flash.utils.getQualifiedClassName;
-  import idv.cjcat.stardust.common.xml.XMLDeserializer;
-  import idv.cjcat.stardust.common.xml.XMLSerializer;
   
   /**
    * All Stardust elements are subclasses of this class.
    */
-  public class StardustElement implements XMLSerializable
+  public class StardustElement
   {
-    
-    private static var elementCounter:Dictionary = new Dictionary();
+    private static var counter_:Dictionary = new Dictionary();
     
     public var name:String;
     
     public function StardustElement()
     {
-      var str:String = getXMLTagName();
+      var ElementClass:Class = Class(Object(this).constructor);
       
-      if (elementCounter[str] == undefined)
-        elementCounter[str] = 0;
-      else
-        elementCounter[str]++;
+      if (counter_[ElementClass] == undefined) counter_[ElementClass] = 0;
+      else ++counter_[ElementClass];
       
-      this.name = str + "_" + elementCounter[str];
+      name = getQualifiedClassName(ElementClass).substring("::")[1] + "_" + counter_[ElementClass];
     }
     
     //XML
@@ -31,20 +27,20 @@
     
     public function toXML():XML
     {
-      var node:XML = <element/>;
+      var node:XML    = <element/>;
+      
+      //add name and class name attributes
+      node.@name      = name;
       node.@className = getQualifiedClassName(Class(Object(this).constructor));
+      
       return node;
     }
     
-    public function serialize(serializer:XMLSerializer):void
-    {
-      serializer.push(toXML());
-    }
+    public function getRelatedElements():Array
+    { return []; }
     
-    public function deserialize(xml:XML, deserializer:XMLDeserializer = null):void
-    {
-      
-    }
+    public function parseXML(xml:XML, deserializer:XMLDeserializer = null):void
+    { }
     
     //------------------------------------------------------------------------------------------------
     //end of XML
