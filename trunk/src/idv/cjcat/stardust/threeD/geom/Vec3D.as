@@ -1,7 +1,7 @@
 ﻿package idv.cjcat.stardust.threeD.geom {
-	import idv.cjcat.signals.ISignal;
-	import idv.cjcat.signals.Signal;
 	import idv.cjcat.stardust.common.math.StardustMath;
+  import org.osflash.signals.ISignal;
+  import org.osflash.signals.Signal;
 	
 	/**
 	 * 3D Vector with common vector operations.

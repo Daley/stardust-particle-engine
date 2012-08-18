@@ -6,7 +6,7 @@
    */
   public interface XMLSerializable
   {
-    function toXML():XML;
-    function parseXML(xml:XML, builder:XMLBuilder = null):void;
+    function serialize(serializer:XMLSerializer):void;
+    function deserialize(xml:XML, deserializer:XMLDeserializer = null):void;
   }
 }

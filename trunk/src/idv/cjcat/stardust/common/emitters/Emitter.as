@@ -1,6 +1,4 @@
 ﻿package idv.cjcat.stardust.common.emitters {
-	import idv.cjcat.signals.ISignal;
-	import idv.cjcat.signals.Signal;
 	import idv.cjcat.stardust.common.actions.Action;
 	import idv.cjcat.stardust.common.actions.ActionCollection;
 	import idv.cjcat.stardust.common.actions.ActionCollector;
@@ -20,6 +18,8 @@
 	import idv.cjcat.stardust.common.StardustElement;
 	import idv.cjcat.stardust.common.xml.XMLBuilder;
 	import idv.cjcat.stardust.sd;
+  import org.osflash.signals.ISignal;
+  import org.osflash.signals.Signal;
 	
 	use namespace sd;
 	

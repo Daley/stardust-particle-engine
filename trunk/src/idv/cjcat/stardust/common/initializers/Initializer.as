@@ -1,6 +1,4 @@
 ﻿package idv.cjcat.stardust.common.initializers {
-	import idv.cjcat.signals.ISignal;
-	import idv.cjcat.signals.Signal;
 	import idv.cjcat.stardust.common.emitters.Emitter;
 	import idv.cjcat.stardust.common.particles.InfoRecycler;
 	import idv.cjcat.stardust.common.particles.Particle;
@@ -8,6 +6,8 @@
 	import idv.cjcat.stardust.common.particles.ParticleIterator;
 	import idv.cjcat.stardust.common.StardustElement;
 	import idv.cjcat.stardust.common.xml.XMLBuilder;
+  import org.osflash.signals.ISignal;
+  import org.osflash.signals.Signal;
 	
 	/**
 	 * An initializer is used to alter just once (i.e. initialize) a particle's properties upon the particle's birth.

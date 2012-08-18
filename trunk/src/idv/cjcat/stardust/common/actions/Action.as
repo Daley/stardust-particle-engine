@@ -1,12 +1,12 @@
 ﻿package idv.cjcat.stardust.common.actions {
-	import idv.cjcat.signals.ISignal;
-	import idv.cjcat.signals.Signal;
 	import idv.cjcat.stardust.common.emitters.Emitter;
 	import idv.cjcat.stardust.common.particles.Particle;
 	import idv.cjcat.stardust.common.particles.ParticleCollection;
 	import idv.cjcat.stardust.common.particles.ParticleIterator;
 	import idv.cjcat.stardust.common.StardustElement;
 	import idv.cjcat.stardust.common.xml.XMLBuilder;
+  import org.osflash.signals.ISignal;
+  import org.osflash.signals.Signal;
 	
 	/**
 	 * An action is used to continuously update a particle's property.

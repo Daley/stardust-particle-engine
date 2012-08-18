@@ -1,6 +1,4 @@
 ﻿package idv.cjcat.stardust.threeD.actions  {
-	import idv.cjcat.signals.ISignal;
-	import idv.cjcat.signals.Signal;
 	import idv.cjcat.stardust.common.easing.EasingFunctionType;
 	import idv.cjcat.stardust.common.easing.Linear;
 	import idv.cjcat.stardust.common.emitters.Emitter;
@@ -11,6 +9,8 @@
 	import idv.cjcat.stardust.common.xml.XMLBuilder;
 	import idv.cjcat.stardust.threeD.actions.Action3D;
 	import idv.cjcat.stardust.threeD.particles.Particle3D;
+  import org.osflash.signals.ISignal;
+  import org.osflash.signals.Signal;
 	
 	/**
 	 * Restores particle states to previously taken "snapshot" by the <code>Snapshot3D</code> class. 
